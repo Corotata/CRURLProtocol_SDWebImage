@@ -7,11 +7,12 @@
 //
 
 #import "CRURLProtocol_SDWebImageCache.h"
-
 #import <SDWebImage/SDWebImageManager.h>
 #import <SDWebImage/NSData+ImageContentType.h>
 
-#import "SDImageCache+Extension.h"
+@interface SDImageCache (Extension)
+- (NSData *)diskImageDataBySearchingAllPathsForKey:(NSString *)key;
+@end
 
 @interface CRURLProtocol_SDWebImageCache()
 

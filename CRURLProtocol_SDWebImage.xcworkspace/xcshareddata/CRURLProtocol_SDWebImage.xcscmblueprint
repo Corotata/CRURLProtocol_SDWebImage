@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1DB0C973064FF9950DE11F5B3B3DADFB78298206",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1DB0C973064FF9950DE11F5B3B3DADFB78298206" : 9223372036854775807,
+    "B457C26F1D86A1DC5D8AC9F49064260458EE8CFB" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3C796ADB-BDDA-4D09-8818-14A1CCBF3711",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1DB0C973064FF9950DE11F5B3B3DADFB78298206" : "CRURLProtocol_SDWebImage\/",
+    "B457C26F1D86A1DC5D8AC9F49064260458EE8CFB" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CRURLProtocol_SDWebImage",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CRURLProtocol_SDWebImage.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Corotata\/CRURLProtocol_SDWebImage.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1DB0C973064FF9950DE11F5B3B3DADFB78298206"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.oschina.net\/corotata\/CorotataDemes.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B457C26F1D86A1DC5D8AC9F49064260458EE8CFB"
+    }
+  ]
+}
