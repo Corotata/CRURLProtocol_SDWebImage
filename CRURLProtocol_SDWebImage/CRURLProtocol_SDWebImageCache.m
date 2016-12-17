@@ -14,21 +14,18 @@
 #import "SDImageCache+Extension.h"
 
 @interface CRURLProtocol_SDWebImageCache()
-@property (nonatomic, strong) id<SDWebImageOperation> operation;
-@end
 
-static NSString * const WebviewImageProtocolHandledKey = @"WebviewImageProtocolHandledKey";
+@property (nonatomic, strong) id<SDWebImageOperation> operation;
+
+@end
 
 @implementation CRURLProtocol_SDWebImageCache
 
 + (BOOL)canInitWithRequest:(NSURLRequest *)request {
     
     NSString *path = request.URL.path;
-    // 只处理是图片的URL请求
+    // Catch the Image URL
     if ([path hasSuffix:@".jpg"] || [path hasSuffix:@".jpeg"] || [path hasSuffix:@".webp"]||[path hasSuffix:@".png"]||[path hasSuffix:@".gif"]) {
-        if ([NSURLProtocol propertyForKey:WebviewImageProtocolHandledKey inRequest:request]) {
-            return NO;
-        }
         return YES;
     }
     return NO;
@@ -45,7 +42,7 @@ static NSString * const WebviewImageProtocolHandledKey = @"WebviewImageProtocolH
     
     if (data) {
         [self p_updateImageData:data];
-        NSLog(@"\n-------------------命中缓存:%@-------------------------\n",self.request.URL);
+        NSLog(@"\nCatch the cache:%@ \n\n",self.request.URL);
     } else {
         self.operation = [[SDWebImageDownloader sharedDownloader]downloadImageWithURL:self.request.URL options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
             
@@ -54,7 +51,7 @@ static NSString * const WebviewImageProtocolHandledKey = @"WebviewImageProtocolH
             [self p_updateImageData:data];
             
             if (image) {
-                NSLog(@"\n-------------------缓存成功:%@-------------------------\n",self.request.URL);
+                NSLog(@"\nCache success:%@\n\n",self.request.URL);
                 [[SDImageCache sharedImageCache] storeImage:image
                                        recalculateFromImage:NO
                                                   imageData:data
