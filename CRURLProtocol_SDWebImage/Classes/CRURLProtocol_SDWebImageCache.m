@@ -43,7 +43,10 @@
     
     if (data) {
         [self p_updateImageData:data];
+#ifdef DEBUG
         NSLog(@"\nCatch the cache:%@ \n\n",self.request.URL);
+#endif
+        
     } else {
         self.operation = [[SDWebImageDownloader sharedDownloader]downloadImageWithURL:self.request.URL options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
             
@@ -52,7 +55,9 @@
             [self p_updateImageData:data];
             
             if (image) {
+#ifdef DEBUG
                 NSLog(@"\nCache success:%@\n\n",self.request.URL);
+#endif
                 [[SDImageCache sharedImageCache] storeImage:image
                                        recalculateFromImage:NO
                                                   imageData:data

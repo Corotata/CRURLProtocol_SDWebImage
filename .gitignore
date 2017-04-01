@@ -1,0 +1,7 @@
+CRURLProtocol_SDWebImage.xcodeproj/xcuserdata/
+CRURLProtocol_SDWebImage.xcworkspace/
+Pods/
+*.swp
+Podfile.lock
+.DS_Store
+CRURLProtocol_SDWebImage.xcodeproj/project.xcworkspace/xcuserdata/

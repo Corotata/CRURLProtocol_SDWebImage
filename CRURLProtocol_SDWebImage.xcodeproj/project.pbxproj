@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1CC6C7991BB829F34AFB00EC /* libPods-CRURLProtocol_SDWebImageTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9282B7CF2ACCE841FDC2FBE0 /* libPods-CRURLProtocol_SDWebImageTests.a */; };
+		75BD91041E8F97F0008ED2A9 /* CRURLProtocol_SDWebImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BD91031E8F97F0008ED2A9 /* CRURLProtocol_SDWebImageCache.m */; };
 		75C2E3121E04D9100028A3D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C2E3111E04D9100028A3D4 /* main.m */; };
 		75C2E3151E04D9100028A3D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C2E3141E04D9100028A3D4 /* AppDelegate.m */; };
 		75C2E3181E04D9100028A3D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C2E3171E04D9100028A3D4 /* ViewController.m */; };
@@ -16,7 +17,6 @@
 		75C2E3201E04D9100028A3D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75C2E31E1E04D9100028A3D4 /* LaunchScreen.storyboard */; };
 		75C2E32B1E04D9100028A3D4 /* CRURLProtocol_SDWebImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C2E32A1E04D9100028A3D4 /* CRURLProtocol_SDWebImageTests.m */; };
 		75C2E3361E04D9100028A3D4 /* CRURLProtocol_SDWebImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C2E3351E04D9100028A3D4 /* CRURLProtocol_SDWebImageUITests.m */; };
-		75C2E3451E04D95C0028A3D4 /* CRURLProtocol_SDWebImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C2E3441E04D95C0028A3D4 /* CRURLProtocol_SDWebImageCache.m */; };
 		97AE4FCAF2C53BD9A4622A2E /* libPods-CRURLProtocol_SDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB1937AB34899808A807EE38 /* libPods-CRURLProtocol_SDWebImage.a */; };
 		B41B217CBF62FAE56A9658D4 /* libPods-CRURLProtocol_SDWebImageUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9517A3EE21176ECFC804C0DF /* libPods-CRURLProtocol_SDWebImageUITests.a */; };
 /* End PBXBuildFile section */
@@ -42,6 +42,8 @@
 		03A3081B0FAEC8B4885A7DEE /* Pods-CRURLProtocol_SDWebImageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRURLProtocol_SDWebImageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CRURLProtocol_SDWebImageTests/Pods-CRURLProtocol_SDWebImageTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0A01701F8A23F8867AD7E998 /* Pods-CRURLProtocol_SDWebImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRURLProtocol_SDWebImage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CRURLProtocol_SDWebImage/Pods-CRURLProtocol_SDWebImage.debug.xcconfig"; sourceTree = "<group>"; };
 		4EED97FC23A16F74B5547BC9 /* Pods-CRURLProtocol_SDWebImageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRURLProtocol_SDWebImageUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CRURLProtocol_SDWebImageUITests/Pods-CRURLProtocol_SDWebImageUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		75BD91021E8F97F0008ED2A9 /* CRURLProtocol_SDWebImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRURLProtocol_SDWebImageCache.h; sourceTree = "<group>"; };
+		75BD91031E8F97F0008ED2A9 /* CRURLProtocol_SDWebImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRURLProtocol_SDWebImageCache.m; sourceTree = "<group>"; };
 		75C2E30D1E04D9100028A3D4 /* CRURLProtocol_SDWebImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRURLProtocol_SDWebImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C2E3111E04D9100028A3D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		75C2E3131E04D9100028A3D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,8 +60,6 @@
 		75C2E3311E04D9100028A3D4 /* CRURLProtocol_SDWebImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRURLProtocol_SDWebImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C2E3351E04D9100028A3D4 /* CRURLProtocol_SDWebImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRURLProtocol_SDWebImageUITests.m; sourceTree = "<group>"; };
 		75C2E3371E04D9100028A3D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75C2E3431E04D95C0028A3D4 /* CRURLProtocol_SDWebImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRURLProtocol_SDWebImageCache.h; sourceTree = "<group>"; };
-		75C2E3441E04D95C0028A3D4 /* CRURLProtocol_SDWebImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRURLProtocol_SDWebImageCache.m; sourceTree = "<group>"; };
 		7FB62CAD6B99CB9D3FEAE15F /* Pods-CRURLProtocol_SDWebImageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRURLProtocol_SDWebImageTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CRURLProtocol_SDWebImageTests/Pods-CRURLProtocol_SDWebImageTests.release.xcconfig"; sourceTree = "<group>"; };
 		9282B7CF2ACCE841FDC2FBE0 /* libPods-CRURLProtocol_SDWebImageTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CRURLProtocol_SDWebImageTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9517A3EE21176ECFC804C0DF /* libPods-CRURLProtocol_SDWebImageUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CRURLProtocol_SDWebImageUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +106,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		75BD91011E8F97F0008ED2A9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				75BD91021E8F97F0008ED2A9 /* CRURLProtocol_SDWebImageCache.h */,
+				75BD91031E8F97F0008ED2A9 /* CRURLProtocol_SDWebImageCache.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		75C2E3041E04D90F0028A3D4 = {
 			isa = PBXGroup;
 			children = (
@@ -131,12 +140,11 @@
 		75C2E30F1E04D9100028A3D4 /* CRURLProtocol_SDWebImage */ = {
 			isa = PBXGroup;
 			children = (
+				75BD91011E8F97F0008ED2A9 /* Classes */,
 				75C2E3131E04D9100028A3D4 /* AppDelegate.h */,
 				75C2E3141E04D9100028A3D4 /* AppDelegate.m */,
 				75C2E3161E04D9100028A3D4 /* ViewController.h */,
 				75C2E3171E04D9100028A3D4 /* ViewController.m */,
-				75C2E3431E04D95C0028A3D4 /* CRURLProtocol_SDWebImageCache.h */,
-				75C2E3441E04D95C0028A3D4 /* CRURLProtocol_SDWebImageCache.m */,
 				75C2E3191E04D9100028A3D4 /* Main.storyboard */,
 				75C2E31C1E04D9100028A3D4 /* Assets.xcassets */,
 				75C2E31E1E04D9100028A3D4 /* LaunchScreen.storyboard */,
@@ -454,8 +462,8 @@
 			files = (
 				75C2E3181E04D9100028A3D4 /* ViewController.m in Sources */,
 				75C2E3151E04D9100028A3D4 /* AppDelegate.m in Sources */,
+				75BD91041E8F97F0008ED2A9 /* CRURLProtocol_SDWebImageCache.m in Sources */,
 				75C2E3121E04D9100028A3D4 /* main.m in Sources */,
-				75C2E3451E04D95C0028A3D4 /* CRURLProtocol_SDWebImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
